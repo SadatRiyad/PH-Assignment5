@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 .font-inter {
     font-family: "Inter", sans-serif;
 }
@@ -233,6 +239,8 @@ main{
     border-radius: 88px 88px 0px 0px;
     border-top: 2px solid #1DD100;
     background: #F7F8F8;
+    overflow: hidden;
+
 
     & .demo-ticket{
         padding: 20px;
@@ -257,7 +265,7 @@ main{
 
         & .d{
             border-bottom: 1.5px dotted #03071233;
-            padding: 0 10px;
+            padding: 0 8px;
             margin: 15px 0 10px;
         }
         & .b{
@@ -280,6 +288,8 @@ main{
 .demo-ticket{
     border-radius: 12px;
     background: #FFF;
+    overflow: hidden;
+
 }
 @media screen and (max-width: 640px){
     #ticket{
@@ -304,6 +314,9 @@ main{
         width: 100%;
     }
 }
+.buy-ticket .demo-ticket{
+    padding: 0 20px 0 0 !important;
+}
 
 #buy-ticket-box{
     margin-top: 30px !important;
@@ -314,7 +327,8 @@ main{
         padding: 2px 4px;
         cursor: default;
     }
-    & .d-box2{
+    & .left .d-box2{
+        width: 100% !important;
         padding: 0 0 0px;
         background: transparent;
         margin-bottom: 10px;
@@ -323,6 +337,34 @@ main{
             margin-bottom: 5px;
         }
     }
+    & .right1 .d-box2{
+        width: 100% !important;
+        padding: 0 0 0px;
+        margin:0 0 20px;
+
+        & h5{
+            margin-bottom: 5px;
+        }
+        & .head{
+            background: white;
+        }
+    }
+    & .right2{
+        width: 100%;
+        font-family: "Inter", sans-serif;
+        margin:0 0 20px;
+        padding: 20px !important;
+        & h5{
+            margin-bottom: 5px;
+        }
+        & .head{
+            background: white;
+        }
+    }
+    & .demo1{
+        padding-left: 10px !important;
+    }
+
    
     & .main-btn{
         margin-right: 5px !important;
@@ -344,8 +386,7 @@ main{
             border: transparent;
         }
         & .seat-select .main-btn:hover{
-            background: #1DD100;
-            color: #fff;
+            background: rgba(3, 7, 18, 0.10);            
             border: transparent;
         }
         & .seat-select .m,
@@ -367,13 +408,14 @@ main{
         }
     }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 740px){
     #buy-ticket-box{
        flex-direction: column;
         
         & .demo1{
             width: 100% !important;
-            padding-left: 0px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
         }
         & #b{
             flex-direction: row;
@@ -390,29 +432,43 @@ main{
             padding: 25px 0px 0px 0px!important;
             margin-left: 20px !important;
         }
-        
+        .form-control{
+            width: 100% !important;
+        }
+        div.level{
+            width: 100% !important;
+        }
     }
-    
+    .demo3{
+        width: 100% !important;
+    }
 }
 
+#btn-apply, #btn-next{
+    background: #1DD100;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #1DD100;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none !important;
+}
 
-
-
-
-
-
-
-
+#btn-apply:hover, #btn-next:hover{
+    background: transparent;
+    color: #1DD100;
+    border: 1px solid #1DD100;
+}
 footer {
+    background:#030712;
+    padding: 80px 10px;
     margin-bottom: 0 !important;
 }
 
 footer a:hover {
     color: #1DD100 !important;
 }
-
-
-
 
 @media screen and (max-width: 360px){
     h1{
@@ -422,5 +478,15 @@ footer a:hover {
     .d-box1{
         flex-direction: column;
         gap: 20px;
+    }
+    footer, .footer-container, .footer, .footer1, .footer2,p{
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer1, .footer2{
+        margin: 0 auto;
+    }
+    .footer1 img{
+        margin: 0 auto;
     }
 }

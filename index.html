@@ -189,6 +189,7 @@
                     </div>
                 </div>
             </section>
+
     </div>
 
     <section id="ticket">
@@ -253,160 +254,298 @@
                                 <img src="images/fare.png" alt="">
                             </div>
                             <div>
-                                <h5>550 Taka</h5>
-                                <h5>Per Seat</h5>
+                                <h5 class="font-bold">550 Taka</h5>
+                                <h5 class="text-p-color font-bold">Per Seat</h5>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <!-- but ticket -->
-                <div class="demo-ticket flex" id="buy-ticket-box">
-                    <div class="demo1 w-[60%] p-6">
-                        <div class="d-box2 p-6 mx-4 font-bold text-p-color">
-                            <div class="d flex justify-between gap-4">
-                                <div>
-                                    <h5 class="text-black text-xl font-bold">Select Your Seat</h5>
+                <!-- buy ticket -->
+                <div class="buy-ticket">
+                    <div class="demo-ticket flex" id="buy-ticket-box">
+                        <div class="left demo1 w-[60%] p-6">
+                            <div class="d-box2 p-6 mx-4 font-bold text-p-color">
+                                <div class="d flex justify-between gap-4">
+                                    <div>
+                                        <h5 class="text-black text-xl font-bold">Select Your Seat</h5>
+                                    </div>
+                                </div>
+                                <div class="d flex justify-between gap-4">
+                                    <div>
+                                        <h5><i class="fa fa-couch"></i> Available</h5>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-main-color"><i class="fa fa-couch"></i> Selected</h5>
+                                    </div>
+                                </div>
+                                <div class=" flex justify-evenly mt-8" id="b">
+                                    <div class="w-[55%] pr-2 md:pr-9 pl-2">
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn m" id="driver-s">A</button><button class="btn"
+                                                id="driver-s">A1</button><button class="btn" id="driver-s">A2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">A</button><button
+                                                class="main-btn">A1</button><button class="main-btn">A2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">B</button><button
+                                                class="main-btn">B1</button><button class="main-btn">B2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">C</button><button
+                                                class="main-btn">C1</button><button class="main-btn">C2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">D</button><button
+                                                class="main-btn">D1</button><button class="main-btn">D2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">E</button><button
+                                                class="main-btn">E1</button><button class="main-btn">E2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">F</button><button
+                                                class="main-btn">F1</button><button class="main-btn">F2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">G</button><button
+                                                class="main-btn">G1</button><button class="main-btn">G2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">H</button><button
+                                                class="main-btn">H1</button><button class="main-btn">H2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">I</button><button
+                                                class="main-btn">I1</button><button class="main-btn">I2</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="btn-ghost m">J</button><button
+                                                class="main-btn">J1</button><button class="main-btn">J2</button>
+                                        </div>
+                                    </div>
+                                    <div class="w-[40%] pl-6">
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn" id="driver-s">A3</button><button class="main-btn"
+                                                id="driver-main"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="28" viewBox="0 0 32 32" fill="none">
+                                                    <path
+                                                        d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                        stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg></button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">A3</button><button class="main-btn">A4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">B3</button><button class="main-btn">B4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">C3</button><button class="main-btn">C4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">D3</button><button class="main-btn">D4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">E3</button><button class="main-btn">E4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">F3</button><button class="main-btn">F4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">G3</button><button class="main-btn">G4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">H3</button><button class="main-btn">H4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">I3</button><button class="main-btn">I4</button>
+                                        </div>
+                                        <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
+                                            <button class="main-btn">J3</button><button class="main-btn">J4</button>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="b">
+                                        <p>Boarding Point - Laxmipur</p>
+                                    </div>
+                                    <div class="b">
+                                        <p>Dropping Point - Bogura</p>
+                                    </div>
+                                    <div class="b">
+                                        <p>Est. Time - 11 Hour</p>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="d flex justify-between gap-4">
-                                <div>
-                                    <h5><i class="fa fa-couch"></i> Available</h5>
-                                </div>
-                                <div>
-                                    <h5 class="text-main-color"><i class="fa fa-couch"></i> Selected</h5>
-                                </div>
-                            </div>
-                            <div class=" flex justify-evenly mt-8" id="b">
-                                <div class="w-[55%] pr-2 md:pr-9 pl-2">
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn m" id="driver-s">A</button><button class="btn"
-                                            id="driver-s">A1</button><button class="btn" id="driver-s">A2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">A</button><button
-                                            class="main-btn">A1</button><button class="main-btn">A2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">B</button><button
-                                            class="main-btn">B1</button><button class="main-btn">B2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">C</button><button
-                                            class="main-btn">C1</button><button class="main-btn">C2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">D</button><button
-                                            class="main-btn">D1</button><button class="main-btn">D2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">E</button><button
-                                            class="main-btn">E1</button><button class="main-btn">E2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">F</button><button
-                                            class="main-btn">F1</button><button class="main-btn">F2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">G</button><button
-                                            class="main-btn">G1</button><button class="main-btn">G2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">H</button><button
-                                            class="main-btn">H1</button><button class="main-btn">H2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">I</button><button
-                                            class="main-btn">I1</button><button class="main-btn">I2</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="btn-ghost m">J</button><button
-                                            class="main-btn">J1</button><button class="main-btn">J2</button>
+                        </div>
+
+                        <div class="demo2"></div>
+
+                        <div class="demo3 w-[39%] justify-center text-center" id="demo3">
+                            <div class="right1 demo1 w-full p-6">
+                                <div class="d-box2 p-6 mx-4 font-bold text-p-color">
+                                    <div class="d head flex justify-between gap-4">
+                                        <div>
+                                            <h5 class="text-black text-xl font-bold ">Select Your Seat</h5>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="w-[40%] pl-6">
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn" id="driver-s">A3</button><button class="main-btn"
-                                            id="driver-main"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                height="28" viewBox="0 0 32 32" fill="none">
-                                                <path
-                                                    d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
-                                                    stroke="#030712" stroke-opacity="0.7" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg></button>
+                                <div class="d-box2 right2 p-6 mx-4 font-bold text-p-color bg-[#F7F8F8]">
+                                    <div class="d flex justify-between gap-4">
+                                        <div>
+                                            <h5>Seat <span
+                                                    class="px-2 py-1 bg-[#1DD100] rounded-full text-[12px] text-white">4</span>
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h5>Class</h5>
+                                        </div>
+                                        <div>
+                                            <h5>Price</h5>
+                                        </div>
                                     </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">A3</button><button class="main-btn">A4</button>
+                                    <div>
+                                        <ul>
+                                            <li class="flex px-2 justify-between gap-4">
+                                                <h5>A1</h5>
+                                                <h5>Business</h5>
+                                                <h5>550</h5>
+                                            </li>
+                                            <li class="flex px-2 justify-between gap-4">
+                                                <h5>B1</h5>
+                                                <h5>Business</h5>
+                                                <h5>550</h5>
+                                            </li>
+                                            <li class="flex px-2 justify-between gap-4">
+                                                <h5>C1</h5>
+                                                <h5>Economoy</h5>
+                                                <h5>550</h5>
+                                            </li>
+                                            <li class="flex px-2 justify-between gap-4">
+                                                <h5>D1</h5>
+                                                <h5>Economoy</h5>
+                                                <h5>550</h5>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">B3</button><button class="main-btn">B4</button>
+                                    <div class="flex justify-between gap-4 border-dashed border-t-2 mt-2">
+                                        <div>
+                                            <h5>Total Price</h5>
+                                        </div>
+                                        <div>
+                                            <h5>2200</h5>
+                                        </div>
                                     </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">C3</button><button class="main-btn">C4</button>
+                                    <div class="flex justify-between gap-4 border-dashed border-b-2 mt-2">
+                                        <div>
+                                            <h5>Discount</h5>
+                                        </div>
+                                        <div>
+                                            <h5>0</h5>
+                                        </div>
                                     </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">D3</button><button class="main-btn">D4</button>
+                                    <div class="input-field my-4">
+                                        <div class="join">
+                                            <input
+                                                class="input input-bordered join-item w-3/4 rounded-xl text-sm border-gray-300 focus:outline-none focus:border-green-600"
+                                                placeholder="Have any copupon?" />
+                                            <button
+                                                class="btn join-item rounded-xl text-white bg-[#1DD100] hover:bg-green-900 border-green-600"
+                                                id="btn-apply">Apply</button>
+                                        </div>
                                     </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">E3</button><button class="main-btn">E4</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">F3</button><button class="main-btn">F4</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">G3</button><button class="main-btn">G4</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">H3</button><button class="main-btn">H4</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">I3</button><button class="main-btn">I4</button>
-                                    </div>
-                                    <div class="seat-select w-[100%] flex justify-between mb-4" id="seat-select">
-                                        <button class="main-btn">J3</button><button class="main-btn">J4</button>
+                                    <div class="flex justify-between gap-4 border-dashed border-t-2 mt-2 mb-2">
+                                        <div>
+                                            <h5>Grand Total</h5>
+                                        </div>
+                                        <div>
+                                            <h5>2200</h5>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- <div class="b">
-                                    <p>Boarding Point - Laxmipur</p>
+                                <label class="form-control w-full max-w-2xl">
+                                    <div class="label">
+                                        <span class="label-text text-xl opacity-90 font-bold">Passenger Name*</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter your name"
+                                        class="input input-bordered w-full max-w-screen-2xl " />
+                                </label>
+                                <label class="form-control w-full max-w-2xl">
+                                    <div class="label">
+                                        <span class="label-text text-xl opacity-90 font-bold">Phone Number*</span>
+                                    </div>
+                                    <input type="number" placeholder="Enter your phone number"
+                                        class="input input-bordered w-full max-w-2xl" required />
+                                </label>
+                                <label class="form-control w-full max-w-2xl">
+                                    <div class="label">
+                                        <span class="label-text text-xl opacity-90 font-bold">Email*</span>
+                                    </div>
+                                    <input type="email" placeholder="Enter your email"
+                                        class="input input-bordered w-full max-w-2xl" />
+                                </label>
+                                <button
+                                    class="w-full mb-2 mt-4 btn join-item rounded-xl text-white bg-[#1DD100] hover:bg-green-900 border-green-600"
+                                    id="btn-next">Next
+                                </button>
+                                <div
+                                    class="justify-between flex items-center m-2 text-sm mb-6 text-p-color opacity-90 font-semibold underline">
+                                    <a href="#" class="">Terms and Conditions</a>
+                                    <a href="#" class="">Cancellation Policy</a>
                                 </div>
-                                <div class="b">
-                                    <p>Dropping Point - Bogura</p>
-                                </div>
-                                <div class="b">
-                                    <p>Est. Time - 11 Hour</p>
-                                </div> -->
                             </div>
                         </div>
                     </div>
-
-                    <div class="demo2"></div>
-
-                    <div class="demo3 w-[39%] justify-center items-center text-center flex" id="demo3">
-                        <div>
-                            <div>
-                                <img src="images/fare.png" alt="">
-                            </div>
-                            <div>
-                                <h5>550 Taka</h5>
-                                <h5>Per Seat</h5>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="maximum-container px-2 lg:px-0 md:w-[80%] mx-auto ">
+            <div class="footer1 flex justify-between py-6 m-0 pt-0 w-full border-dashed border-b-2 border-slate-500">
+                <div>
+                    <img src="images/footerlogo-removebg-preview.png" alt="" class="w-5/6 -ml-4">
+                    <!-- <h5 class="text-white font-bold text-2xl">BB-Ticket</h5> -->
+                    <p class="mt-2 text-sm text-white opacity-60 mb-3">BB-Ticket is a digital platform to make your
+                        <br>daily
+                        commuting better.
+                    </p>
+                </div>
+                <div class="text-end">
+                    <p class="mt-6 text-base text-white">Download our app</p>
+                    <div class="flex justify-end mt-3">
+                        <img src="images/gplay.png" alt="" class="w-5/6 mt-3">
+                    </div>
+                </div>
+            </div>
+            <div class="footer2 flex justify-between m-0 pt-4 w-full">
+                <div class="pr-6">
+                    <p class="mt-2 text-sm text-white opacity-90 mb-3">&copy;2024 all rights reserved, BB-Ticket
+                        services
+                        limited.</p>
+                </div>
+                <div class="text-end">
+                    <div class="flex justify-end mt-0 gap-6">
+                        <a href="#">
+                            <p class="mt-2 text-sm text-white opacity-90 mb-3">Terms & condition</p>
+                        </a>
+                        <a href="#">
+                            <p class="mt-2 text-sm text-white opacity-90 mb-3">Refund policy</p>
+                        </a>
+                        <a href="#">
+                            <p class="mt-2 text-sm text-white opacity-90 mb-3">Privacy policy</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
