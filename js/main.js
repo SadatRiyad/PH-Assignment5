@@ -173,6 +173,12 @@ for (let j = 0; j < seated.length; j++) {
             "grand-total"
           ).innerText = grandTotal);
 
+          function hideBtn() {
+            const btnApply = document.querySelector("#btn-apply").parentNode;
+            btnApply.setAttribute("hidden", "true");
+            btnApply.classList.remove("active");
+          }
+          setTimeout(hideBtn, 100);
 
         } else if (cuponCode === "COUPLE20" && isDiscounted == false) {
           isDiscounted = true;
@@ -183,6 +189,14 @@ for (let j = 0; j < seated.length; j++) {
           const grandTotals = (document.getElementById(
             "grand-total"
           ).innerText = grandTotal);
+
+          function hideBtn() {
+            const btnApply = document.querySelector("#btn-apply").parentNode;
+            btnApply.setAttribute("hidden", "true");
+            btnApply.classList.remove("active");
+          }
+          setTimeout (hideBtn, 100);
+
         } else {
           alert("Invalid Code, Please enter a valid code.");
         }
@@ -191,4 +205,9 @@ for (let j = 0; j < seated.length; j++) {
   });
 }
 
-// location.reload();
+// btn-apply hidden after successful apply of coupon code
+function hideBtn() {
+  const btnApply = document.querySelector("#btn-apply");
+  btnApply.setAttribute("disabled", "true");
+  btnApply.classList.remove("active");
+}
