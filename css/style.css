@@ -167,28 +167,6 @@ main{
             width: 85%;
         }
     }
-    /* & select, input[type="text"]{
-        width: 150px;
-        height: 46px;
-        border-radius: 8px;
-        border: none;
-        padding: 0px 20px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: 1px;
-        background: #fff;
-        color: #13131880;
-    }   
-    & select:focus, input[type="text"]:focus{
-        outline: none;
-    }
-    & a{
-        color: #fff;
-        font-size: 14px;
-        font-weight: 600;
-        margin: 0px 0px 10px;
-    } */
 }
 .cupon-container .main-btn{
     background-color: #fff;
